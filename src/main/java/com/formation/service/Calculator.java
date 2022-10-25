@@ -1,8 +1,11 @@
 package com.formation.service;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class Calculator {
-    
-    public static Integer sum(Integer a, Integer b){
-        return a+b;
-    }
+	public int sum(int a, int b) {
+		return a+b;
+	}
+
 }

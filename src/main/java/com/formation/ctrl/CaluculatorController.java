@@ -1,3 +1,4 @@
+
 package com.formation.ctrl;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,12 +10,11 @@ import com.formation.service.Calculator;
 
 @RestController
 public class CaluculatorController {
-    
-    @Autowired
-    private Calculator calculator;
+@Autowired
+private Calculator calculator;
 
-    @RequestMapping("/sum")
-    String sum(@RequestParam("a") Integer a, @RequestParam("b") Integer b){
-        return String.valueOf((calculator.sum(a,b)));
-    }
+@RequestMapping("/sum")
+String sum(@RequestParam("a")Integer a, @RequestParam("b")Integer b) {
+	return String.valueOf(calculator.sum(a, b));
+}
 }
